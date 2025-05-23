@@ -172,19 +172,70 @@
   margin-top: 0;
 }
 
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.header-video-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px; /* ya lo habías bajado de 80px */
+  background: linear-gradient(to top, #0f0f0faa, transparent 60%);
+}
+
+
+.header-overlay h1 {
+  font-size: 24px;
+  margin-bottom: 100px;
+  text-shadow: 2px 2px #00ffcc;
+}
+
+.header-overlay .btn {
+  transform: translateY(-80px); /* sube el botón */
+}
+
+
   </style>
 </head>
 <body>
   <header>
-  <div class="header-video-content">
+  <div class="header-video-wrapper">
     <video autoplay muted loop playsinline class="header-video">
       <source src="goty.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <h1>WE ARE GOING TO THE MOON</h1>
-    <a href="#buy" class="btn">BUY NOW</a>
+    <div class="header-overlay">
+      <h1>WE ARE GOING TO THE MOON</h1>
+      <a href="#buy" class="btn">BUY NOW</a>
+    </div>
   </div>
 </header>
+
 
 
   <section class="section">
