@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonMeme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      padding: 80px 40px;
+      background: url('your-banner.gif') center center/cover no-repeat;
+      background-color: #000;
+      gap: 20px;
+    }
+
+    .header-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-image img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .header-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .header-content h1 {
+      font-size: 28px;
+      text-shadow: 2px 2px #00ffcc;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: #00ffcc;
+      color: #000;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px #00ffcc;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 60px 20px;
+      background-color: #1a1a1a;
+      border-top: 2px solid #00ffcc33;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-text {
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .section-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section-image img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      color: #00ffcc;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .tokenomics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 12px;
+    }
+
+    .social-links a {
+      margin: 0 15px;
+      color: #00ffcc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-image">
+      <img src="wolf.png" alt="Wolf Image">
+    </div>
+    <div class="header-content">
+      <h1>WE ARE GOING TO THE MOON</h1>
+      <a href="#buy" class="btn">BUY NOW</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>WHAT IS MOONMEME?</h2>
+    <div class="section-content">
+      <div class="section-text">
+        <p>MoonMeme is the ultimate community-driven meme token that rewards holders and supports the dankest meme culture in the galaxy.</p>
+      </div>
+      <div class="section-image">
+        <img src="moonmeme-right.png" alt="MoonMeme Graphic">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>TOKENOMICS</h2>
+    <div class="tokenomics">
+      <p>Total Supply: 1,000,000,000</p>
+      <p>0% Buy Tax</p>
+      <p>0% Sell Tax</p>
+      <p>LP Burned</p>
+      <p>Ownership Renounced</p>
+    </div>
+  </section>
+
+  <section class="section" id="buy">
+  <h2>HOW TO BUY</h2>
+  <div class="section-content">
+    <div class="section-image">
+      <img src="how-to-buy.png" alt="How to Buy Illustration">
+    </div>
+    <div class="section-text">
+      <p>Use <strong>Raydium</strong> or <strong>Jupiter</strong> to trade <strong>SOL</strong> for <strong>MoonMeme</strong>.</p>
+      <p>Copy the contract address and paste it into your DEX.</p>
+      <p>Moon awaits!</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="social-links">
+      <a href="#">Twitter</a>
+      <a href="#">Telegram</a>
+      <a href="#">DexTools</a>
+      <a href="#">Raydium</a>
+    </div>
+    <p>&copy; 2025 MoonMeme. All rights reserved.</p>
+  </footer>
+</body>
+</html>
