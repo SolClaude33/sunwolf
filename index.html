@@ -87,7 +87,7 @@
 
     .section-text {
       flex: 1;
-      font-size: 14px;
+      font-size: 25px;
       line-height: 1.8;
       text-align: left;
     }
@@ -105,7 +105,7 @@
     }
 
     .section h2 {
-      font-size: 22px;
+      font-size: 50px;
       color: #FFD700;
       margin-bottom: 30px;
       text-align: center;
@@ -117,7 +117,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      font-size: 14px;
+      font-size: 25px;
     }
 
     footer {
@@ -219,6 +219,40 @@ header {
   transform: translateY(-80px); /* sube el botón */
 }
 
+.tokenomics-video {
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  border-top: none;
+  background: #000;
+  overflow: hidden;
+}
+
+.fullscreen-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(1); /* 👈 AJUSTA el zoom */
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.video-overlay-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 50px;
+  color: #FFD700;
+  text-shadow: 2px 2px #000;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
 
   </style>
 </head>
@@ -230,7 +264,7 @@ header {
       Your browser does not support the video tag.
     </video>
     <div class="header-overlay">
-      <h1>WE ARE GOING TO THE MOON</h1>
+      <h1>WE ARE GOING TO THE SUN</h1>
       <a href="#buy" class="btn">BUY NOW</a>
     </div>
   </div>
@@ -239,10 +273,10 @@ header {
 
 
   <section class="section">
-    <h2>WHAT IS MOONMEME?</h2>
+    <h2>WHAT IS SUNWOLF?</h2>
     <div class="section-content">
       <div class="section-text">
-        <p>MoonMeme is the ultimate community-driven meme token that rewards holders and supports the dankest meme culture in the galaxy.</p>
+        <p>Sunwolf is the ultimate community-driven meme token that rewards holders and supports the most chill meme culture in Solana.</p>
       </div>
       <div class="section-image">
         <img src="lentes.png" alt="MoonMeme Graphic">
@@ -250,16 +284,14 @@ header {
     </div>
   </section>
 
-  <section class="section">
-    <h2>TOKENOMICS</h2>
-    <div class="tokenomics">
-      <p>Total Supply: 1,000,000,000</p>
-      <p>0% Buy Tax</p>
-      <p>0% Sell Tax</p>
-      <p>LP Burned</p>
-      <p>Ownership Renounced</p>
-    </div>
-  </section>
+  <section class="section tokenomics-video">
+  <video autoplay muted loop playsinline class="fullscreen-video">
+    <source src="GOTY2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay-text">take a break</div>
+</section>
+
 
   <section class="section" id="buy">
   <h2>HOW TO BUY</h2>
@@ -268,7 +300,7 @@ header {
       <img src="raw.png" alt="How to Buy Illustration">
     </div>
     <div class="section-text">
-      <p>Use <strong>Raydium</strong> or <strong>Jupiter</strong> to trade <strong>SOL</strong> for <strong>MoonMeme</strong>.</p>
+      <p>Use <strong>Raydium</strong> or <strong>Jupiter</strong> to trade <strong>SOL</strong> for <strong>SUNWOLF</strong>.</p>
       <p>Copy the contract address and paste it into your DEX.</p>
       <p>Moon awaits!</p>
     </div>
